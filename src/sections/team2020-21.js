@@ -2,107 +2,313 @@ import React from "react";
 import { Image, Box, Container, Grid, Heading, Text } from "theme-ui";
 import BlockTitle from "components/block-title";
 
-import Firoz from "assets/team/Firoz.png";
+import fazil from "assets/team/fazil.png";
+import firoz from "assets/team/firoz.png";
+import raneesh from "assets/team/raneesh.png";
+import faseeh from "assets/team/faseeh.png";
+import jithin from "assets/team/jithin.png";
+import juraij from "assets/team/juraij.png";
+import rahul from "assets/team/rahul.png";
+import sreedarsh from "assets/team/sreedarsh.png";
+import reshma from "assets/team/reshma.png";
+import sabari from "assets/team/sabari.png";
+import mahboob from "assets/team/mahboob.png";
+import danish from "assets/team/danish.png";
+import nihal from "assets/team/nihal.png";
+import nagappan from "assets/team/nagappan.png";
+import hadi from "assets/team/hadi.png";
+import akhil from "assets/team/akhil.png";
+import davis from "assets/team/davis.png";
+import zameel from "assets/team/zameel.png";
+import amrutha from "assets/team/amrutha.png";
+import ahzam from "assets/team/ahzam.png";
+import bazwith from "assets/team/bazwith.png";
+import anfas from "assets/team/anfas.png";
+import shihad from "assets/team/shihad.png";
+import sriraj from "assets/team/sriraj.png";
+import rishaab from "assets/team/rishaab.png";
+import hisham from "assets/team/hisham.png";
+import neelanjana from "assets/team/neelanjana.png";
+import akshay from "assets/team/akshay.png";
+import nithin from "assets/team/nithin.png";
+import raagul from "assets/team/raagul.png";
+import joel from "assets/team/joel.png";
+import gokul from "assets/team/gokul.png";
+import hameem from "assets/team/hameem.png";
+
+
+import none from "assets/team/none.png";
+
 
 const TEAM_MEMBERS_DIRECTORS = [
-    {},
     {
-      image: Firoz,
-      name: "Anfas Nujum",
+      image: anfas,
+      name: "Anfas Nujum K",
       designation: "",
       },
   {
-    image: Firoz,
+    image: faseeh,
     name: "Faseeh Ahmad",
     designation: "",
   },
-  {}
 ];
 
 const TEAM_MEMBERS_PR = [
   {
-    image: Firoz,
-    name: "Sabari Krishna",
+    image: sabari,
+    name: "Sabari Krishna M",
     designation: "Senior Executive",
   },
   {
-    image: Firoz,
-    name: "Afeef",
+    image: none,
+    name: "Afeef P",
     designation: "Senior Executive",
   },
   {
-    image: Firoz,
-    name: "Raneesh Rafeeq",
+    image: none,
+    name: "Amrit Sharma",
+    designation: "Senior Executive",
+  },
+  {
+    image: raneesh,
+    name: "M R Mohammed Raneesh",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Danish Ovungal",
+    image: danish,
+    name: "Danish Mohamed O",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Jithin Laxman",
+    image: jithin,
+    name: "Jithin L",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Rahul Krishna",
+    image: rahul,
+    name: "Rahul Krishna K",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Reshma",
+    image: reshma,
+    name: "Reshma Aiyappan",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
+    image: mahboob,
     name: "Mahboob Ali",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Juraij",
+    image: juraij,
+    name: "Juraij Ibn M Basheer",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Anfal Nihal",
+    image: nihal,
+    name: "Nihal N P",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Raneesh Rafeeq",
+    image: sreedarsh,
+    name: "Sreedarsh S J",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Sreedarsh SJ",
+    image: none,
+    name: "R Adwaith Krishna",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
+    image: none,
+    name: "Sreeram Krishna R",
+    designation: "Coordinator",
+  },
+  {
+    image: firoz,
     name: "Firoz P S",
     designation: "Coordinator",
   },
+];
+
+const TEAM_MEMBERS_WEB = [
   {
-    image: Firoz,
-    name: "Adwaith",
+    image: gokul,
+    name: "Gokulkrishnan A V",
+    designation: "Senior Executive",
+  },
+  {
+    image: akshay,
+    name: "Akshay Krishna",
+    designation: "Senior Executive",
+  },
+  {
+    image: none,
+    name: "Vinay P",
+    designation: "Senior Executive",
+  },
+  {
+    image: none,
+    name: "Mathew George Kalathoor",
+    designation: "Senior Executive",
+  },
+  {
+    image: joel,
+    name: "Joel Jose",
+    designation: "Project Executive",
+  },
+  {
+    image: none,
+    name: "Hari Sankar C N",
+    designation: "Project Executive",
+  },
+  {
+    image: none,
+    name: "Hrithwik Shalu",
+    designation: "Project Executive",
+  },
+  {
+    image: none,
+    name: "Rishikesh S",
+    designation: "Project Executive",
+  },
+  {
+    image: hadi,
+    name: "Abdul Hadi P V",
     designation: "Coordinator",
   },
   {
-    image: Firoz,
-    name: "Sreeram",
+    image: fazil,
+    name: "Fazil P S",
+    designation: "Coordinator",
+  },
+  {
+    image: firoz,
+    name: "Firoz P S",
     designation: "Coordinator",
   },
 ];
+
+const TEAM_MEMBERS_DESIGN = [
+  {
+    image: none,
+    name: "Sreeram Krishna R",
+    designation: "Coordinator",
+  },
+  {
+    image: none,
+    name: "R Adwaith Krishna",
+    designation: "Coordinator",
+  },
+];
+
+  const TEAM_MEMBERS_EDU = [
+    {
+      image: nagappan,
+      name: "Nagappan N",
+      designation: "Manager",
+    },
+    {
+      image: shihad,
+      name: "Mohamed Shihad P",
+      designation: "Manager",
+    },
+    {
+      image: fazil,
+      name: "Fazil P S",
+      designation: "Manager",
+    },
+    {
+      image: raagul,
+      name: "Raagul K",
+      designation: "Manager",
+    },
+    {
+      image: zameel,
+      name: "Muhamed Zameel",
+      designation: "Manager",
+    },
+    {
+      image: hisham,
+      name: "Muhammed Hisham",
+      designation: "Manager",
+    },
+    {
+      image: neelanjana,
+      name: "Neelanjana Pramod A v",
+      designation: "Manager",
+    },
+    {
+      image: ahzam,
+      name: "Ahzam Parvez Ashraf",
+      designation: "Consultant",
+    },
+    {
+      image: hameem,
+      name: "Hameem Mohammed Ridwan",
+      designation: "Consultant",
+    },
+    {
+      image: bazwith,
+      name: "S Bazwith Muhammed",
+      designation: "Consultant",
+    },
+    {
+      image: davis,
+      name: "Davis T Vempeny",
+      designation: "Consultant",
+    },
+    {
+      image: amrutha,
+      name: "Amrutha M U",
+      designation: "Consultant",
+    },
+    {
+      image: none,
+      name: "Pooja Ramapurath",
+      designation: "Consultant",
+    },
+    {
+      image: akhil,
+      name: "Akhil Krishna M M",
+      designation: "Consultant",
+    },
+    {
+      image: rishaab,
+      name: "R Rishaab Karthik",
+      designation: "Consultant",
+    },
+    {
+      image: nithin,
+      name: "S Nithin",
+      designation: "Consultant",
+    },
+    {
+      image: sriraj,
+      name: "Valeti Sriraj",
+      designation: "Consultant",
+    },
+    {
+      image: none,
+      name: "Aaysha Anser Babu",
+      designation: "Consultant",
+    },
+    {
+      image: none,
+      name: "Shashank Swaminathan",
+      designation: "Consultant",
+    },
+  ];
 
 const Team2020_21 = () => {
   return (
     <Box sx={styles.services} id="services">
       <Container>
+        <Heading as="h1" sx={styles.mainHeading}>
+          Tensors Team of 2020-21
+        </Heading>
         <BlockTitle title="Directors" styles={styles.blockTitle} />
-        <Grid sx={styles.grid}>
+        <Grid sx={styles.directorsGrid}>
           {TEAM_MEMBERS_DIRECTORS.map((service, index) => (
             <Box
               className="service-card"
@@ -118,7 +324,7 @@ const Team2020_21 = () => {
           ))}
         </Grid>
         <BlockTitle title="Public Relations Team" styles={styles.blockTitle} />
-        <Grid sx={styles.grid}>
+        <Grid sx={styles.prGrid}>
           {TEAM_MEMBERS_PR.map((service, index) => (
             <Box
               className="service-card"
@@ -133,6 +339,55 @@ const Team2020_21 = () => {
             </Box>
           ))}
         </Grid>
+        <BlockTitle title="Tenment Team" styles={styles.blockTitle} />
+        <Grid sx={styles.eduGrid}>
+          {TEAM_MEMBERS_EDU.map((service, index) => (
+            <Box
+              className="service-card"
+              sx={styles.serviceCard}
+              key={`service-post-${index}`}
+            >
+              <Box className="service-icon" sx={styles.icon}>
+                <Image src={service.image} alt="" />
+              </Box>
+              <Heading as="h3">{service.name}</Heading>
+              <Text as="p">{service.designation}</Text>
+            </Box>
+          ))}
+        </Grid>
+        <BlockTitle title="Design Team" styles={styles.blockTitle} />
+        <Grid sx={styles.designGrid}>
+          {TEAM_MEMBERS_DESIGN.map((service, index) => (
+            <Box
+              className="service-card"
+              sx={styles.serviceCard}
+              key={`service-post-${index}`}
+            >
+              <Box className="service-icon" sx={styles.icon}>
+                <Image src={service.image} alt="" />
+              </Box>
+              <Heading as="h3">{service.name}</Heading>
+              <Text as="p">{service.designation}</Text>
+            </Box>
+          ))}
+        </Grid>
+        <BlockTitle title="TenSCI team" styles={styles.blockTitle} />
+        <Grid sx={styles.webGrid}>
+          {TEAM_MEMBERS_WEB.map((service, index) => (
+            <Box
+              className="service-card"
+              sx={styles.serviceCard}
+              key={`service-post-${index}`}
+            >
+              <Box className="service-icon" sx={styles.icon}>
+                <Image src={service.image} alt="" />
+              </Box>
+              <Heading as="h3">{service.name}</Heading>
+              <Text as="p">{service.designation}</Text>
+            </Box>
+          ))}
+        </Grid>
+        <Box sx={styles.bottomline}></Box>
       </Container>
     </Box>
   );
@@ -141,14 +396,26 @@ const Team2020_21 = () => {
 export default Team2020_21;
 
 const styles = {
+  mainHeading: {
+    fontSize: [4, null, null, null, 6],
+    textAlign: "center",
+    fontWeight: "bolder",
+    color: "primary",
+    mt: ["80px", null, null, null, null, null, "140px"],
+  },
   services: {
     pt: ["80px", null, null, null, null, null, "140px"],
-
   },
   blockTitle: {
     textAlign: "center",
+    mt: ["80px", null, null, null, null, null, "140px"],
   },
-  grid: {
+  directorsGrid: {
+    display: "grid",
+    gridGap: ["30px", null, null, null, null, "60px"],
+    gridTemplateColumns: ["1fr", null, null, "1fr 1fr", null, "1fr 1fr"],
+  },
+  prGrid: {
     display: "grid",
     gridGap: ["30px", null, null, null, null, "60px"],
     gridTemplateColumns: [
@@ -159,7 +426,35 @@ const styles = {
       null,
       "1fr 1fr 1fr 1fr",
     ],
-    
+  },
+  eduGrid: {
+    display: "grid",
+    gridGap: ["30px", null, null, null, null, "60px"],
+    gridTemplateColumns: [
+      "1fr",
+      null,
+      null,
+      "1fr 1fr",
+      null,
+      "1fr 1fr 1fr 1fr",
+    ],
+  },
+  designGrid: {
+    display: "grid",
+    gridGap: ["30px", null, null, null, null, "60px"],
+    gridTemplateColumns: ["1fr", null, null, "1fr 1fr", null, "1fr 1fr"],
+  },
+  webGrid: {
+    display: "grid",
+    gridGap: ["30px", null, null, null, null, "60px"],
+    gridTemplateColumns: [
+      "1fr",
+      null,
+      null,
+      "1fr 1fr",
+      null,
+      "1fr 1fr 1fr 1fr",
+    ],
   },
   icon: {
     display: "flex",
@@ -175,10 +470,10 @@ const styles = {
     h3: {
       margin: 0,
       fontSize: ["18px", null, null, 3],
-      fontWeight: "bold",
       lineHeight: 1,
       color: "black",
       mt: ["10px", null, null],
+      fontFamily: "Raleway",
     },
     p: {
       margin: 0,
@@ -187,6 +482,13 @@ const styles = {
       width: "100%",
       maxWidth: [null, null, null, null, "84%", "100%"],
       mx: [null, null, null, null, "auto", "0"],
+      fontFamily: "Roboto",
     },
+  },
+  bottomline: {
+    width: "100%",
+    backgroundColor: "primary",
+    height: "3px",
+    mt: ["20px", null, null, null, "60px"],
   },
 };

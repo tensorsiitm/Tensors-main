@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{VgaG:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return i}));var a=t("q1tI"),l=t.n(a),r=(t("4l1m"),t("/KGT"),t("HP2+"),t("t4Y7")),u=t("vrFN"),c=t("Bl7J"),o=t("CLjq");t("WHHo");function i(){return l.a.createElement(r.a,null,l.a.createElement(c.a,null,l.a.createElement(u.a,{title:"Team 2021-22"}),l.a.createElement(o.a,null)))}}}]);
+//# sourceMappingURL=component---src-pages-team-2021-22-js-0da3a67358e168bf56a7.js.map

@@ -14,7 +14,7 @@ import Team2020_21 from "../../sections/team2020-21";
 export default function TeamPage() {
   return (
     <StickyProvider>
-      <Layout>
+      <Layout page="team">
         <SEO title="Team 2020-21" />
         <Team2020_21 />
       </Layout>

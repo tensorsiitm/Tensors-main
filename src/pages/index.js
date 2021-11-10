@@ -17,18 +17,20 @@ import CallToAction from "sections/call-to-action";
 import TensorsEdu from "sections/tensors-edu";
 import Team from "../sections/team";
 import AboutUs from "../sections/about-us";
+import DirectorsMessage from "../sections/directors-message";
 
 export default function IndexPage() {
   return (
     <StickyProvider>
-      <Layout>
-        <SEO title="Tensors" />
+      <Layout page="home">
+        <SEO title="Home" />
         <Banner />
         <AboutUs />
         <Services />
         <TensorsEdu />
         <DecovApp />
         <Team />
+        <DirectorsMessage />
         <Feature />
         <CallToAction />
       </Layout>

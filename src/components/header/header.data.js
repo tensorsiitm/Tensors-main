@@ -21,6 +21,6 @@ export default [
   },
   {
     path: "feature",
-    label: "Past-Projects",
+    label: "Our-Projects",
   },
 ];

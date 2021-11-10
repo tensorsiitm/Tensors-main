@@ -12,20 +12,18 @@ const AboutUs = () => {
   return (
     <Box sx={styles.boostAgencies} id="about-us">
       <Container>
-      <BlockTitle
-        slogan="About Us"
-        title="What are we doing"
-        styles={styles.blockTitle}
-      />
+        <BlockTitle
+          slogan="About Us"
+          title="What we do"
+          styles={styles.blockTitle}
+        />
         <Box sx={styles.content}>
           <Text as="p">
-            Create custom landing pages with Shades that convert more visitors
-            than any website, no coding required. Create custom landing pages
-            with Shades that convert more visitors than any website, no coding
-            required. Create custom landing pages with Shades that convert more
-            visitors than any website, no coding required. Create custom landing
-            pages with Shades that convert more visitors than any website, no
-            coding required.
+            Tensors is a non profit organization by the students of IIT Madras
+            aiming to help the society. We take several social initiatives and
+            organize social campaigns throughout the year. We generate our funds
+            for these social events by conducting various exams and counselling
+            programs for JEE and JoSAA.
           </Text>
         </Box>
       </Container>
@@ -45,7 +43,10 @@ const styles = {
   content: {
     width: ["90%", null, null, null, null, "60%"],
     textAlign: "center",
+    color: "text",
     pt: [null, null, null, null, null, "0px"],
+    mt: [null, null, null, null, null, "-5%"],
     ml: ["5%", null, null, null, null, "20%"],
+    fontFamily: "Roboto",
   },
 };

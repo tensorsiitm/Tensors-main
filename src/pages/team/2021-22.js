@@ -13,7 +13,7 @@ import CallToAction from "sections/call-to-action";
 export default function TeamPage() {
   return (
     <StickyProvider>
-      <Layout>
+      <Layout page="team">
         <SEO title="Team 2021-22" />
         <Services />
       </Layout>

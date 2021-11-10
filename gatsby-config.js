@@ -1,8 +1,13 @@
 module.exports = {
+  pathPrefix: "/Tensors-main",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Tensors`,
+    description: `Tensors is a non profit organization by the students of IIT Madras
+            aiming to help the society. We take several social initiatives and
+            organize social campaigns throughout the year. We generate our funds
+            for these social events by conducting various exams and counselling
+            programs for JEE and JoSAA.`,
+    author: `@tensorsWebOps`,
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
@@ -26,20 +31,18 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/icons/user_icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/icons/logo192.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
-            family: `DM Sans`,
-            variants: [`400`, `500`, `700`],
+            family: `Poppins:wght@300;400;500;600;700`,
           },
           {
-            family: `Playfair Display`,
-            variants: [`400`, `500`, `700`],
+            family: `Fira Sans:wght@100;300;400;500;600;700`,
           },
         ],
       },

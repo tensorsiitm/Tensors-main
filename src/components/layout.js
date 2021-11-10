@@ -8,7 +8,7 @@ import Footer from './footer/footer';
 import { Waypoint } from 'react-waypoint';
 import { useStickyDispatch } from '../contexts/app/app.provider';
 
-export default function Layout({ children }) {
+export default function Layout({ children, page }) {
   const isSticky = useStickyState('isSticky');
   const dispatch = useStickyDispatch();
   const setSticky = useCallback(() => dispatch({ type: 'SET_STICKY' }), [
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
   return (
     <React.Fragment>
       <Sticky enabled={isSticky} innerZ={1000}>
-        <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
+        <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} page={page}/>
       </Sticky>
       <Waypoint
         onEnter={removeSticky}

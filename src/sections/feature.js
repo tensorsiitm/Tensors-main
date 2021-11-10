@@ -7,7 +7,9 @@ import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 import decov from 'assets/projects/decov2.png';
 import imprints from 'assets/projects/imprints-web2.png';
-import featureImage3 from 'assets/tutorial-1-3.png';
+import mentorship from 'assets/projects/mentorship.jpeg';
+import "@fontsource/roboto/500.css";
+
 
 const FeatureData = [
   {
@@ -21,9 +23,8 @@ const FeatureData = [
     path: "/",
   },
   {
-    image: featureImage3,
-    title:
-      "Conducted free mentorship session for students preparing for JEE",
+    image: mentorship,
+    title: "Conducted free mentorship session for students preparing for JEE",
     path: "/",
   },
 ];
@@ -82,14 +83,14 @@ const Feature = () => {
     <Box sx={styles.features} id="feature">
       <Container>
         <BlockTitle
-          slogan="Past Projects"
-          title="The projects we've worked upon"
+          slogan="Our Projects"
+          title="The projects we've brought to life"
           styles={styles.blockTitle}
         />
 
         <Swiper {...params} ref={ref}>
           {FeatureData.map((feature, index) => (
-            <div className="swiper-slider" key={`feature-card-key${index}`}>
+            <div className="swiper-slider" key={`feature-card-key${index}`} styles={styles.featureCard}>
               <FeatureCard
                 image={feature.image}
                 title={feature.title}
@@ -115,34 +116,34 @@ export default Feature;
 
 const styles = {
   blockTitle: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   features: {
-    pt: ['80px', null, null, null, null, null, '120px'],
-    pb: ['80px', null, null, null, '170px'],
-    backgroundColor: '#F8FAFC',
-    '.swiper-slider': {
-      overflowY: 'visible',
-      overflowX: 'hidden',
+    pt: ["80px", null, null, null, null, null, "120px"],
+    pb: ["80px", null, null, null, "170px"],
+    backgroundColor: "#F8FAFC",
+    ".swiper-slider": {
+      overflowY: "visible",
+      overflowX: "hidden",
     },
   },
   carouselBtns: {
-    display: ['flex', null, null, null, null, 'none'],
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: ["flex", null, null, null, null, "none"],
+    justifyContent: "center",
+    alignItems: "center",
     button: {
-      border: 'none',
-      outline: 'none',
-      backgroundColor: 'transparent',
+      border: "none",
+      outline: "none",
+      backgroundColor: "transparent",
       fontSize: [2, null, 4, null, 5],
-      color: '#BBC7D7',
-      width: 'auto',
+      color: "#BBC7D7",
+      width: "auto",
       padding: [0],
-      margin: '0 5px',
-      mt: '15px',
-      transition: '500ms',
-      '&:hover, &:active, &:focus': {
-        color: 'primary',
+      margin: "0 5px",
+      mt: "15px",
+      transition: "500ms",
+      "&:hover, &:active, &:focus": {
+        color: "primary",
       },
     },
   },

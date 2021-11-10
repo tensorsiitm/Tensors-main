@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Button, Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
+import { Link } from "components/link";
 import { DrawerContext } from 'contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link as ScrollLink } from 'react-scroll';
@@ -9,7 +10,7 @@ import menuItems from './header.data';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
 
-const MobileDrawer = () => {
+const MobileDrawer = ({page}) => {
   const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
@@ -36,27 +37,53 @@ const MobileDrawer = () => {
       <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Logo src={LogoDark} />
-          <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={10}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-          </Box>
 
-          <Box sx={styles.menuFooter}>
-            <Button variant="primary" sx={styles.button}>
-              Register Now
-            </Button>
-          </Box>
+          {page == "home" && (
+            <Box sx={styles.menu}>
+              {menuItems.map(({ path, label }, i) => (
+                <ScrollLink
+                  activeClass="active"
+                  to={path}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                  key={i}
+                >
+                  {label}
+                </ScrollLink>
+              ))}
+            </Box>
+          )}
+
+          {page == "team" && (
+            <Box sx={styles.menu}>
+              {/*
+                            <Link
+                activeClass="active"
+                path="/team/2021-22/"
+                label="Team 2021-22"
+              />
+              */}
+              <Link
+                activeClass="active"
+                path="/team/2020-21/"
+                label="Team 2020-21"
+              />
+            </Box>
+          )}
+
+          {page != "home" && (
+            <Box sx={styles.menuFooter}>
+              <Link
+                path="/"
+                ml={2}
+                label="Home"
+                sx={styles.button}
+                variant="buttons.primary"
+              />
+            </Box>
+          )}
         </Box>
       </Scrollbars>
     </Drawer>
@@ -65,79 +92,80 @@ const MobileDrawer = () => {
 
 const styles = {
   handler: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexShrink: '0',
-    width: '26px',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: "0",
+    width: "26px",
 
-    '@media screen and (min-width: 960px)': {
-      display: 'none',
+    "@media screen and (min-width: 960px)": {
+      display: "none",
     },
   },
 
   drawer: {
-    width: '100%',
-    height: '100%',
-    background: '#fff',
+    width: "100%",
+    height: "100%",
+    background: "#fff",
   },
 
   close: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    top: '30px',
-    right: '30px',
-    zIndex: '1',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "30px",
+    right: "30px",
+    zIndex: "1",
   },
 
   content: {
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    pt: '30px',
-    pb: '40px',
-    px: '30px',
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    pt: "30px",
+    pb: "40px",
+    px: "30px",
   },
 
   menu: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    marginTop: '30px',
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "30px",
 
     a: {
-      fontSize: '16px',
-      fontWeight: '400',
-      color: 'black',
-      py: '5px',
-      cursor: 'pointer',
+      fontSize: "16px",
+      fontFamily: "Raleway",
+      fontWeight: "400",
+      color: "black",
+      py: "5px",
+      cursor: "pointer",
     },
   },
 
   menuFooter: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    mt: 'auto',
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    mt: "auto",
   },
 
   button: {
-    fontSize: '15px',
-    fw: '700',
-    height: '48px',
-    borderRadius: '3px',
-    cursor: 'pointer',
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    py: '0',
-    backgroundColor: 'primary',
-    color: '#fff',
+    fontSize: "15px",
+    fw: "700",
+    height: "48px",
+    borderRadius: "3px",
+    cursor: "pointer",
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    py: "0",
+    backgroundColor: "primary",
+    color: "#fff",
   },
 };
 

@@ -1,19 +1,24 @@
 {
-  "name": "@landing/006-gatsby",
+  "name": "@landing/tensors",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Tensors main web",
   "version": "0.1.0",
-  "author": "RedQ, Inc.",
+  "author": "Tensors WebOps",
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.2",
+    "@fontsource/raleway": "^4.5.0",
+    "@fontsource/roboto": "^4.5.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "bootstrap": "^5.1.3",
     "framer-motion": "^2.7.5",
     "gatsby": "^2.24.64",
     "gatsby-image": "^2.3.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-google-analytics": "^2.2.0",
+    "gatsby-plugin-google-fonts-v2": "^1.0.0",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
@@ -22,16 +27,19 @@
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.5.1",
     "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.1",
     "gatsby-transformer-sharp": "^2.4.1",
     "prop-types": "^15.7.2",
     "rc-drawer": "^4.1.0",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.4",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.9.0",
     "react-id-swiper": "^4.0.0",
+    "react-iframe": "^1.8.0",
     "react-modal-video": "^1.2.6",
     "react-router-dom": "^5.3.0",
     "react-scroll": "^1.8.0",
@@ -41,6 +49,7 @@
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "^2.1.2"
   },
   "keywords": [
@@ -49,6 +58,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }

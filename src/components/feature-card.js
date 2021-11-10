@@ -15,9 +15,11 @@ const FeatureCard = (props) => {
           <Link path={props.path}>{props.title}</Link>
         </Heading>
         <Text as="p">
-          <Link path="/">
+          {/*
+                    <Link path="/">
           View Report &nbsp; <FaExternalLinkAlt />
           </Link>
+          */}
         </Text>
       </Box>
     </Box>
@@ -57,6 +59,7 @@ const styles = {
     h3: {
       fontWeight: "bold",
       fontSize: ["18px", null, "17px", null, 3],
+      fontFamily: "Raleway",
       lineHeight: [1.55],
       a: {
         transition: "500ms",
@@ -68,6 +71,7 @@ const styles = {
     p: {
       display: "flex",
       alignItems: "center",
+      fontFamily: "Roboto",
       fontSize: [1, null, 2],
       lineHeight: [2],
       color: "text",

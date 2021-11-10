@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from 'theme-ui';
+import { useState } from 'React';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
 import {
@@ -25,31 +26,35 @@ export default function Footer() {
           variant: "layout.toolbar",
           justifyContent: ["center", null, null, "space-between"],
           flexDirection: ["column", null, null, null, "row"],
-          paddingTop: [30, 40],
-          paddingBottom: [15, 30],
+          paddingTop: ["30px", "40px"],
+          paddingBottom: ["30px", "10px"],
         }}
       >
-        <Box sx={styles.left}>
-          <Text>
-            <FaPhoneAlt /> &nbsp; Anfas : +91 9999999999 &nbsp;
+        <Box sx={styles.phoneNo}>
+          <Text as="p">
+            <FaPhoneAlt /> &nbsp; Anfas : +91 8157925677 &nbsp;
+          </Text>
+          <Text as="p">
             <FaPhoneAlt />
-            &nbsp;Faseeh : +91 9999999999
+            &nbsp; Faseeh : +91 7034073143
           </Text>
         </Box>
-        <Box>
-          <FaEnvelope /> &nbsp; tensorsofficial@gmail.com
+        <Box sx={styles.email}>
+          <Text as="p">
+            <FaEnvelope /> &nbsp; tensorsofficial@gmail.com
+          </Text>
         </Box>
-        <Box sx={styles.right}>
-          <Link path="/">
+        <Box sx={styles.social}>
+          <Link path="https://www.facebook.com/tensorsofficial">
             <FaFacebookF />
           </Link>
-          <Link path="/">
+          <Link path="https://www.instagram.com/tensors_official/">
             <FaInstagram />
           </Link>
-          <Link path="/">
+          <Link path="https://www.linkedin.com/company/53201198">
             <FaLinkedinIn />
           </Link>
-          <Link path="/">
+          <Link path="https://www.youtube.com/channel/UCYQ-dJn04bDDjs1t6eUzq7A">
             <FaYoutube />
           </Link>
         </Box>
@@ -59,11 +64,11 @@ export default function Footer() {
           variant: "layout.toolbar",
           justifyContent: ["center", null, null, "space-between"],
           flexDirection: ["column", null, null, null, "row"],
-          paddingTop: [10, 15],
-          paddingBottom: [30, 65],
+          paddingTop: ["30px", "20px"],
+          paddingBottom: ["30px", "40px"],
         }}
       >
-        <Box sx={styles.left}>
+        <Box sx={styles.copyRight}>
           <Logo />
           <Text as="p">
             &copy; {new Date().getFullYear()} All right reserved - Tensors
@@ -71,7 +76,7 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.visitEdu}>
-          <Link path="/">
+          <Link path="https://edu.tensors.in/">
             Visit Tensors-Edu &nbsp; <FaExternalLinkAlt />
           </Link>
         </Box>
@@ -81,18 +86,47 @@ export default function Footer() {
 }
 
 const styles = {
-  left: {
+  phoneNo: {
+    display: "flex",
+    flexDirection: ["column", null, "row"],
+    alignItems: "center",
+    p: {
+      color: "black",
+      fontFamily: "Roboto",
+      ml: ["0px", null, null, "20px"],
+      paddingBottom: ["10px", "10px", "0px"],
+      svg: {
+        color: "primary",
+      },
+    },
+  },
+  email: {
+    display: "flex",
+    flexDirection: ["column", null, "row"],
+    alignItems: "center",
+    p: {
+      color: "black",
+      fontFamily: "Roboto",
+      ml: ["0px", null, null, "20px"],
+      paddingBottom: ["25px", "25px", "0px"],
+      svg: {
+        color: "primary",
+      },
+    },
+  },
+  copyRight: {
     display: "flex",
     flexDirection: ["column", null, "row"],
     alignItems: "center",
     p: {
       fontSize: [0, 1],
+      fontFamily: "Roboto",
       color: "black",
       opacity: 0.6,
       mt: ["10px", null, "0"],
     },
   },
-  right: {
+  social: {
     display: ["flex", null, null, null, "flex"],
     fontSize: 4,
     alignItems: "center",
@@ -103,10 +137,15 @@ const styles = {
       width: "30px",
       border: "2px solid black",
       borderRadius: "50%",
-      textAlign: "center",
       "&:hover": {
         backgroundColor: "primary",
         color: "white",
+      },
+      svg: {
+        position: "relative",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -80%)",
       },
     },
     "a+a": {
@@ -116,20 +155,16 @@ const styles = {
 
   visitEdu: {
     display: ["none", null, null, null, "flex"],
-    fontSize: 4,
+    fontSize: 2,
     alignItems: "center",
     color: "black",
+    fontFamily: "Roboto",
     a: {
       transition: "500ms",
-      border: "4px solid",
-      borderColor: "primary",
-      borderRadius: "10px",
-      padding: "3px 5px",
-      color: "primary",
+      color: "black",
       textAlign: "center",
       "&:hover": {
-        backgroundColor: "primary",
-        color: "white",
+        color: "primary",
       },
     },
   },

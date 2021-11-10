@@ -104,8 +104,8 @@ const styles = {
     display: "flex",
     textAlign: "center",
     color: "white",
-    ml: 'auto',
-    mr: 'auto',
+    ml: "auto",
+    mr: "auto",
     fontSize: [7, null, null, 8],
     width: ["80px", null, null, "110px"],
     height: ["80px", null, null, "110px"],
@@ -125,6 +125,7 @@ const styles = {
       color: "black",
       mt: ["30px", null, null],
       mb: ["20px", null, null],
+      fontFamily: "Raleway",
     },
     p: {
       margin: 0,
@@ -133,6 +134,8 @@ const styles = {
       width: "100%",
       maxWidth: [null, null, null, null, "84%", "100%"],
       mx: [null, null, null, null, "auto", "0"],
+      px: ["60px", null, null, null],
+      fontFamily: "Roboto",
     },
   },
 };

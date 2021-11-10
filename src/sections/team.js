@@ -5,6 +5,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 
 import { FaAngleRight } from "react-icons/fa";
 import image1 from "assets/team.png";
+import "@fontsource/nunito";
 
 const Team = () => {
   return (
@@ -15,13 +16,16 @@ const Team = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                  A team is what makes an organization it is
+                  A team is what makes an organization what it is
                 </Heading>
                 <Text as="p">
-                  An answer to all your JEE questions from exam preparation to
-                  branch counselling. We offer the following services. An answer
-                  to all your JEE questions from exam preparation to branch
-                  counselling. We offer the following services
+                  Tensors is a team that comprises of four teams under two directors.
+                  The public Relations team, has the responsibility to increase the publicity of the events
+                  of tensors. The tenment team conducts the events for students appearing for JEE like that of
+                  annual tensors exam, JOSAA counselling support etc.. The tensors social campaign initiatives
+                  (TenSCI) team bring in social project and work on
+                  them by providing technical assistance and the design team look after all the design works of
+                  tensors
                 </Text>
               </Box>
               <Link path="/team/2020-21/" sx={styles.link}>
@@ -50,36 +54,13 @@ const styles = {
     flex: ["0 0 100%", null, null, "0 0 50%"],
   },
   image: {
-    mt: ["25px", null, null, "0"],
+    mt: ["25px", null, null, "20px"],
     display: "flex",
     marginLeft: ["0", null, null, null, "auto"],
     marginRight: ["0", null, null, null, "auto"],
     height: ["385px", null, null, "auto"],
     position: "relative",
     top: [null, null, null, "-20px", "-45px", "auto"],
-  },
-  list: {
-    margin: 0,
-    padding: 0,
-    listStyle: "none",
-    ml: ["25px", null, null, "0"],
-    mb: ["10px"],
-    mt: ["30px"],
-    li: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: ["flex-start", null, null, null, null, "flex-start"],
-      fontSize: [1, null, 2, null, "18px"],
-      color: "text_secondary",
-      lineHeight: [2.56],
-      svg: {
-        width: [17, null, null, 23],
-        height: [17, null, null, 23],
-        color: "#DADADA",
-        borderRadius: "50%",
-        marginRight: ["10px"],
-      },
-    },
   },
   titleBox: {
     textAlign: ["center", null, null, "left"],
@@ -89,14 +70,16 @@ const styles = {
       lineHeight: [1.6, null, null, "1.5"],
       fontWeight: "bold",
       letterSpacing: ["-0.5px", null, null, null, null, null, "-1.5px"],
+      fontFamily: "Raleway",
     },
     p: {
       fontSize: [0, null, 2, null, "17px"],
       color: "text_secondary",
-      opacity: ".6",
+      color: "text",
       lineHeight: ["26px", null, null, 1.8, null, 2.06],
       padding: ["0 20px", null, null, "0"],
       mt: ["15px"],
+      fontFamily: "Roboto",
     },
   },
   link: {
@@ -105,16 +88,13 @@ const styles = {
     display: "inline-block",
     verticalAlign: "middle",
     fontWeight: "bold",
-    pl: ["30px", null, null, "4px", null, "4px"],
+    fontFamily: "Nunito",
+    pl: ["0px", null, null, "4px", null, "4px"],
     mt: ["5px", null, null, null, "10px"],
-    svg: {
-      position: "relative",
-      top: "3px",
-    },
   },
   content: {
     width: "100%",
-    textAlign: ["left", null, null, null, "left"],
+    textAlign: ["center", null, null, null, "left"],
     pt: [null, null, null, null, null, "100px"],
     pl: [null, null, null, null, null, "60px", "140px"],
   },
