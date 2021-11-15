@@ -5,8 +5,8 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import BlockTitle from "components/block-title";
 
 import { FaAngleRight } from "react-icons/fa";
-import anfas from "assets/team/anfas.png";
-import faseeh from "assets/team/faseeh.png";
+import anfas from "assets/anfas.png";
+import faseeh from "assets/faseeh.png";
 
 
 const DirectorsMessage = () => {
