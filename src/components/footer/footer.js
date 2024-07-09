@@ -31,11 +31,11 @@ export default function Footer() {
       >
         <Box sx={styles.phoneNo}>
           <Text as="p">
-            <FaPhoneAlt /> &nbsp; Anfas : +91 8157925677 &nbsp;
+            <FaPhoneAlt /> &nbsp; Aadil : +91 8330020642 &nbsp;
           </Text>
           <Text as="p">
             <FaPhoneAlt />
-            &nbsp; Faseeh : +91 7034073143
+            &nbsp; Devanarayanan : +91 8281913830
           </Text>
         </Box>
         <Box sx={styles.email}>
