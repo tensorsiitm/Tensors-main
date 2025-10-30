@@ -30,7 +30,8 @@ const DirectorsMessage = () => {
                   value to themselves and the society simultaneously. That's what
                   drove us towards Tensors."
                 </Text>
-                <Text as="h6">-Anfas Nujum, Director</Text>
+                <Text as="h6">-Anfas Nujum, founder & Advisory Board Member 
+</Text>
               </Box>
             </Box>
           </Flex>
@@ -41,9 +42,7 @@ const DirectorsMessage = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Text as="p">
-                  "No idea that has the potential to create an impact in our
-                  society should ever be disgarded due to poor funding or
-                  support. Tensors is our answer to that wish."
+                  "Growth blooms in the fertile ground of shared vision and raw talent. Together, we build something extraordinary, a legacy of lasting impact and enduring purpose."
                 </Text>
                 <Text as="h6">-Faseeh Ahmad, Director</Text>
               </Box>
