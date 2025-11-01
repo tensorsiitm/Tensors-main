@@ -1,13 +1,10 @@
 import React from "react";
-import { Box, Container, Flex, Heading, Text, Image } from "theme-ui";
-import { Link } from "components/link";
-import { IoIosCheckmarkCircle } from "react-icons/io";
+import { Box, Container, Flex, Text, Image } from "theme-ui";
 import BlockTitle from "components/block-title";
 
-import { FaAngleRight } from "react-icons/fa";
 import anfas from "assets/anfas.png";
-import faseeh from "assets/faseeh.png";
-
+import devan from "assets/devan.jpg";
+import aadil from "assets/aadil.jpg"; // ✅ Add this image in assets folder
 
 const DirectorsMessage = () => {
   return (
@@ -18,9 +15,13 @@ const DirectorsMessage = () => {
           title="What our leaders say"
           styles={styles.blockTitle}
         />
-        <Box sx={styles.row}>
+        <Box sx={styles.col}>
+          {/* 1️⃣ First Member */}
+          <Box sx={styles.row}>
+
+    
           <Flex sx={styles.imageCol}>
-            <Image src={anfas} sx={styles.image} alt="" />
+            <Image src={anfas} sx={styles.image} alt="Anfas" />
           </Flex>
           <Flex sx={styles.contentCol}>
             <Box sx={styles.content}>
@@ -30,24 +31,45 @@ const DirectorsMessage = () => {
                   value to themselves and the society simultaneously. That's what
                   drove us towards Tensors."
                 </Text>
-                <Text as="h6">-Anfas Nujum, founder & Advisory Board Member 
-</Text>
+                <Text as="h6">- Anfas Nujum, Founder & Advisory Board Member</Text>
               </Box>
             </Box>
           </Flex>
+
+          {/* 2️⃣ Second Member */}
           <Flex sx={styles.imageCol}>
-            <Image src={faseeh} sx={styles.image} alt="" />
+            <Image src={aadil} sx={styles.image} alt="Aadil" />
           </Flex>
           <Flex sx={styles.contentCol}>
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Text as="p">
-                  "Growth blooms in the fertile ground of shared vision and raw talent. Together, we build something extraordinary, a legacy of lasting impact and enduring purpose."
+                  "Growth blooms in the fertile ground of shared vision and raw
+                  talent. Together, we build something extraordinary."
                 </Text>
-                <Text as="h6">-Faseeh Ahmad, Director</Text>
+                <Text as="h6">- Aadil, Advisory Board Member</Text>
               </Box>
             </Box>
           </Flex>
+
+      </Box>
+
+          {/* 3️⃣ Third Member (NEW) */}
+          <Box sx={styles.row}>
+          <Flex sx={styles.imageCol}>
+            <Image src={devan} sx={styles.image} alt="Devan" />
+          </Flex>
+          <Flex sx={styles.contentCol}>
+            <Box sx={styles.content}>
+              <Box sx={styles.titleBox}>
+                <Text as="p">
+                  "We believe that technology’s truest power is not in what it creates, but in what it awakens, the courage to grow, the will to lead and the compassion to make a difference"
+                </Text>
+                <Text as="h6">- Devanarayanan V S, Director</Text>
+              </Box>
+            </Box>
+          </Flex>
+              </Box>
         </Box>
       </Container>
     </Box>
@@ -57,6 +79,13 @@ const DirectorsMessage = () => {
 export default DirectorsMessage;
 
 const styles = {
+  col:{
+display: "flex",
+flexDirection: "column",
+gap: "60px",
+justifyContent: "center",
+alignItems: "center",
+  },
   boostAgencies: {
     pt: ["70px", null, null, "80px", "120px", null, "130px"],
     pb: ["70px", null, null, "80px", "120px", null, "130px"],
@@ -68,6 +97,8 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     flexDirection: ["column", null, null, "row"],
+    justifyContent: "center",
+    alignItems: "center",
   },
   imageCol: {
     flex: ["0 0 100%", null, null, "0 0 10%"],
@@ -84,6 +115,7 @@ const styles = {
     height: ["100px", null, null, "200"],
     position: "relative",
     top: [null, null, null, "-20px", "-45px", "auto"],
+    borderRadius: "50%",
   },
   titleBox: {
     textAlign: ["center", null, null, "left"],
