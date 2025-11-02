@@ -45,7 +45,7 @@ export default function Header({ className, page }) {
               <Link
                 activeClass="active"
                 path="/team/2020-21/"
-                label="Team 2020-21"
+                label="Teams"
                 sx={styles.nav.navLink}
               />
             </Flex>
