@@ -35,7 +35,7 @@ import raagul from "assets/raagul.png";
 import joel from "assets/joel.png";
 import gokul from "assets/gokul.png";
 import hameem from "assets/hameem.png";
-
+import teamBanner from "assets/team.jpg";
 
 import none from "assets/none.png";
 
@@ -305,6 +305,22 @@ const Team2020_21 = () => {
     <Box sx={styles.services} id="services">
       <Container>
         <Heading as="h1" sx={styles.mainHeading}>
+          Tensors Team of 2024-25
+        </Heading>
+  <Box sx={{ textAlign: "center", mt: "40px" }}>
+  <Image
+    src={teamBanner}
+    alt="Tensors Team Banner"
+    sx={{
+      width: ["90%", "80%", "70%"],
+      borderRadius: "12px",
+      boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)",
+      margin: "0 auto",
+    }}
+  />
+</Box>
+
+           <Heading as="h1" sx={styles.mainHeading}>
           Tensors Team of 2020-21
         </Heading>
         <BlockTitle title="Directors" styles={styles.blockTitle} />
@@ -401,7 +417,7 @@ const styles = {
     textAlign: "center",
     fontWeight: "bolder",
     color: "primary",
-    mt: ["80px", null, null, null, null, null, "140px"],
+    mt: ["30px", null, null, null, null, null, "50px"],
   },
   services: {
     pt: ["80px", null, null, null, null, null, "140px"],
